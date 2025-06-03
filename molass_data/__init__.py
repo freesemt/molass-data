@@ -14,5 +14,5 @@ def get_tutorial_data_path():
     Returns the path to the tutorial data directory.
     """
     import os
-    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    return os.path.join(root_dir, "tutorial_data")
+    this_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(this_dir, "tutorial_data")

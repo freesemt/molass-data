@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "molass_data"
-version = "0.0.1"
+version = "0.0.2"
 
 dependencies = [
 ]
@@ -36,4 +36,12 @@ Repository = "https://github.com/freesemt/molass-data"
 [tool.pytest.ini_options]
 pythonpath = [
   "."
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "molass_data/*.py",
+  "molass_data/tutorial_data/*",
+]
+exclude = [
 ]
